@@ -396,7 +396,6 @@
 		F980CE9825B312B500D56C95 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				F980D05925B46D6300D56C95 /* Layout */,
 				F980CF2325B3283600D56C95 /* Constants */,
 				F980CE9925B312BA00D56C95 /* Loading */,
 			);
@@ -537,13 +536,6 @@
 				F980CFC525B3423600D56C95 /* CarouselViewAdapter.swift */,
 			);
 			path = CarouselViewAdapter;
-			sourceTree = "<group>";
-		};
-		F980D05925B46D6300D56C95 /* Layout */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Layout;
 			sourceTree = "<group>";
 		};
 		F980D07E25B4788500D56C95 /* DetailVC */ = {

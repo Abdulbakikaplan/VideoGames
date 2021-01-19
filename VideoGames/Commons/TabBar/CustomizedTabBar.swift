@@ -39,8 +39,6 @@ class CustomizedTabBar: UITabBar, UITabBarDelegate {
                 width: self.frame.width / CGFloat(self.items!.count),
                 height: self.frame.height),
             lineWidth: 3.0)
-
-//        self.addActionButton()
     }
 
     private func updateFont() {
@@ -181,50 +179,6 @@ class CustomizedTabBar: UITabBar, UITabBarDelegate {
         }
         return sizeThatFits
     }
-
-//    private func addActionButton() {
-//        actionButton = {
-//            let xvalue = CGFloat(self.frame.width * (7 / 8)) - CGFloat(tabbarActionButtonWidth / 2)
-//            let yvalue: CGFloat = self.frame.origin.y - CGFloat((tabbarActionButtonWidth / 3.5))
-//
-//            let button = LNFloatingActionButton(xCoordinate: xvalue, yCoordinate: yvalue)
-//            button.delegate = actionButtonDelegate
-//            button.color = .white
-//            button.openedColor = ThemeManager.shared.getThemeColor()
-//            button.shadowOffset = CGPoint(x: 0.0, y: 2.0)
-//            button.shadowOpacity = 0.3
-//            button.shadowRadius = 12.0
-//            button.shadowPath = button.circlePath
-//            button.closedImage = UIImage(named: "icon_fab_open")
-//            button.openedImage = UIImage(named: "icon_fab_close")
-//            button.cellHorizontalAlign = .center
-//            button.isBackgroundView = true
-//            button.cellMargin = 32
-//            button.btnToCellMargin = -14
-//            button.size = tabbarActionButtonWidth
-//            button.responsible = false
-//
-//            floatinActionSubButtons?.forEach({ (item) in
-//                let cell = LNFloatingActionButtonTitleCell()
-//                cell.color = .white
-//                cell.titleColor = .white
-//                cell.size = tabbarActionSubButtonWidth
-//                cell.title = item.title
-//                cell.image = item.image
-//                cell.cellTintColor = ThemeManager.shared.getThemeColor()
-//                button.subActionButtons.append(cell)
-//            })
-//
-//            return button
-//        }()
-//        self.superview?.insertSubview(actionButton, aboveSubview: self)
-//    }
-//
-//    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
-//        return abs(actionButton.center.x - point.x) > actionButton.size
-//            && abs(actionButton.center.y - point.y) > actionButton.size
-//            && point.y > 0
-//    }
 
     private func createSelectionIndicator(color: UIColor, size: CGSize, lineWidth: CGFloat) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
